@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using WebMvc1.Models;
 
 namespace WebMvc1.Controllers
@@ -36,6 +32,12 @@ namespace WebMvc1.Controllers
 
         [HttpPost]
         public IActionResult Form1(FormModel model)
+        {
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Form2(Form2Model model)
         {
             return View(model);
         }

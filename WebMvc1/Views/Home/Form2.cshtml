@@ -1,0 +1,15 @@
+﻿@model WebMvc1.Models.Form2Model
+@{
+    ViewData["Title"] = "Form2";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Dane z formularza</h1>
+    @Html.DisplayNameFor(model => model.Name):          @Html.DisplayFor(model => model.Name)
+    <br />
+    @Html.DisplayNameFor(model => model.NumberOfDaysSinceDate):   @Html.DisplayFor(model => model.NumberOfDaysSinceDate)
+    <br />
+    @Html.DisplayNameFor(model => model.IsLeapYear):    @Html.DisplayFor(model => model.IsLeapYear)
+</div>
+<br />
+<a href="/form2.html">Powrót do Form2 (HTML)</a>
